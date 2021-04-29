@@ -5,31 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Excercice</title>
+    <title>Connexion</title>
 </head>
 <body>
-    <form id="home">
-        <section id="titre">
-                <h1>Login</h1>
-        </section>
-
-        <section id="connexion">
-            <div id="email-form">
-                <label for="email">Email adress</label><br>
-                <input type="email" name="email" placeholder="Email adress" id="email"/>
-                
+    <div class="principal">
+        <div class="card-header">
+            <h1 class="card-title">Connexion</h1>
+        <form class="form">
+            <div class="connexion">
+                <div class="form-input">
+                    <label for="email">Adresse e-mail</label><br>
+                    <input type="email" name="email" placeholder="Adresse e-mail" class="style-input"/>
+                </div>
+                <div class="form-input">
+                    <label for="password">Mot de passe</label><br>
+                    <input type="password" name="password" placeholder="•••••••••" class="style-input"/>
+                </div>
             </div>
-            <div id="password-form">
-                <label for="password">Password</label><br>
-                <input type="password" name="password" placeholder="********" id="password"/>
+
+            <div class="form-buttons">
+                <p id="forgotyourpassword"><a href="" >Mot de passe oublié ?</a></p>
+                <p id="login"><a href="./home.html">Connexion</a></p>
             </div>
-        </section>
-
-        <section id="button-login">
-            <input type="reset" value="Forgot your password" id="forgotyourpassword"/>
-            <input type="submit" value="Login" id="login"/>
-        </section>
-    </form>
-
+        </form>
+        </div>
+    </div>
+    <footer class="smarthealing">
+        <p class="version">SmartHealing V1.0.1</p>
+    </footer>
+    
 </body>
 </html>

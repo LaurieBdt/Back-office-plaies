@@ -1,10 +1,20 @@
+@font-face {
+    font-family: "Gotham";
+    src: url("../../../../lauriebodot/Library/Fonts/GothamRounded-Medium.otf") format("woff2");
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+:root {
+    --main-bg-color: #E6EBEF;
+    --main-bg-color2: #00A6C8;
+}
 body{
-    background-color: #E6EBEF;
+    background-color: var(--main-bg-color);
+    font-family: "Gotham";
     
     width: 100%;
     height: 100vh;
@@ -12,10 +22,21 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
-#home {
+.principal{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.card-header{
     width: 470px;
-    height: 332px;
+
+    padding: 24px;
 
     background-color: white;
 
@@ -26,24 +47,24 @@ body{
     justify-content: center;
     flex-direction: column;
 }
-#titre {
-    width: 100%;
-    height: 10vh;
 
-    background-color: white;
+.card-title {
+    width: 100%;
+
+    font-size: 16px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#titre h1 {
-    font-size: 16px;
+.connexion {
+    font-size: 14px;
 }
-#email {
+.style-input{
     width: 422px;
-    height: 40px;
-
-    background-color: #E6EBEF;
+    
+    background-color: var(--main-bg-color);
+    
     color:#B3C1CD;
 
     padding: 12px;
@@ -53,42 +74,54 @@ body{
     border-radius: 8px;
     border: 0px;
 }
-#password {
-    width: 422px;
-    height: 40px;
-
-    background-color: #E6EBEF;
-    color:#B3C1CD;
-
-    padding: 12px;
-    margin-top: 8px;
-    
-    border-radius: 8px;
-    border: 0px;
+input:hover {
+    border: 2px solid #00A6C8;
 }
-#button-login {
+.form-buttons{
     width: 100%;
-    height: 100px;
+    
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-end;
 }
-#forgotyourpassword {
-    padding: 12px 0px;
-    margin: 32px;
 
-    background-color: white;
+#forgotyourpassword a{
+    padding: 12px 8px;
+    margin-bottom: 24px;
+
+    font-size: 14px;
+
     color: #00A6C8;
 
-    border: white;
+    border: none;
+    text-decoration: none;
 }
-#login {
-    padding: 12px 24px;
-    margin: 32px;
 
-    background-color: #00A6C8;
+#login a{
+    padding: 12px 24px;
+    
+    font-size: 14px;
+
+    text-decoration: none;
+
+    background-color: var(--main-bg-color2);
     color: white;
 
     border: #00A6C8;
     border-radius: 40px;
+}
+
+.smarthealing {
+    width: 100%;
+    
+
+    display: flex;
+    justify-content: flex-end;
+
+    color: #B3C1CD;
+    font-size: 10px;
+}
+
+.version {
+    padding: 32px;
 }
