@@ -1,75 +1,94 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
-body {
-    margin: 0 auto;
-    max-width: 50em;
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #E6EBEF;
+    
+    width: 100%;
+    height: 100vh;
 
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home {
+    width: 470px;
+    height: 332px;
 
-    line-height: 1.5;
-    padding: 4em 1em;
+    background-color: white;
 
-    color: #566b78;
-}
+    border-radius: 8px;
 
-h2 {
-    margin-top: 1em;
-    padding-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-h1,
-h2,
-strong {
-  color: #333;
-}
-a {
-    color : #e81c4f; 
-}
+#titre {
+    width: 100%;
+    height: 10vh;
 
-#header {
-    background-color: #263d36;
-    background-image: url("./image/header.jpg");
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    line-height: 1.2;
-    padding: 10vw 2em;
-    text-align: center;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-#header img {
-    display: inline-block;
-    height: 120px;
-    vertical-align: top;
-    width: 120px;
+#titre h1 {
+    font-size: 16px;
 }
-#header h1 {
+#email {
+    width: 422px;
+    height: 40px;
+
+    background-color: #E6EBEF;
+    color:#B3C1CD;
+
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    
+    border-radius: 8px;
+    border: 0px;
+}
+#password {
+    width: 422px;
+    height: 40px;
+
+    background-color: #E6EBEF;
+    color:#B3C1CD;
+
+    padding: 12px;
+    margin-top: 8px;
+    
+    border-radius: 8px;
+    border: 0px;
+}
+#button-login {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+#forgotyourpassword {
+    padding: 12px 0px;
+    margin: 32px;
+
+    background-color: white;
+    color: #00A6C8;
+
+    border: white;
+}
+#login {
+    padding: 12px 24px;
+    margin: 32px;
+
+    background-color: #00A6C8;
     color: white;
-    font-size: 2.5em;
-    font-weight: 300;
-  }
-  
-#header a {
-    border: 1px solid #e81c4f;
-    border-radius: 290486px;
-    color: white;
-    font-size: 0.6em;
-    letter-spacing: 0.2em;
-    padding: 1em 2em;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: none 200ms ease-out;
-    transition-property: color, background;
+
+    border: #00A6C8;
+    border-radius: 40px;
 }
-  
-#header a:hover {
-    background:  #e81c4f;
-    color: white;
-}
-
-.section-textual-content{
-  padding: 2px 4px;
-  vertical-align: text-bottom;
-
-  background: #eee;
-}
-
-
- 

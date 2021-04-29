@@ -1,52 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercice 1</title>
     <link rel="stylesheet" href="style.css">
+    <title>Excercice</title>
 </head>
 <body>
-    <section id="header">
-        <div id="titre">
-            <h1>Conception Web en 4 minutes</h1>
-            <div class="text">
-                <p>
-                    <a href="https://github.com/LaurieBdt">par Laurie Bodot</a>
-                </p>
-            </div>
-        </div>
-    </section>
+    <form id="home">
+        <section id="titre">
+                <h1>Login</h1>
+        </section>
 
-    <section id="partie1">
-            <div class="text">
-                <p>Disons que vous avez un produit, un portefeuille ou simplement une   idée que vous souhaitez partager avec tout le monde sur votre propre site Web.Avant de le publier sur Internet, vous voulez le rendre attrayant,professionnel ou au moins décent à regarder.</p>
-                <br>
-                <p>Quelle est la <a href="#partie2">première chose sur laquelle</a> vous devez travailler?</p>
+        <section id="connexion">
+            <div id="email-form">
+                <label for="email">Email adress</label><br>
+                <input type="email" name="email" placeholder="Email adress" id="email"/>
+                
             </div>
-    </section>
-    <section id="partie2">
-            <div id="text">
-                <h2>Contenu</h2>
-                <p >Le but de la <strong>conception</strong> est d'améliorer la présentation du contenu auquel il est appliqué. Cela peut sembler évident, mais le contenu étant l' élément <strong>principal</strong> d'un site Web, il ne doit pas être établi après coup.</p>
-                <br>
-                <p>Le contenu écrit, comme le paragraphe que vous lisez actuellement, représente plus de 90% du Web. Le style de ce contenu textuel ira un long chemin.</p>
-                <br>
-                <p>Supposons que vous ayez déjà finalisé le contenu que vous souhaitez publier et que vous venez de créer un style.cssfichier vide , quelle est <a href="#partie2" >la première règle que </a> vous pouvez écrire?</p>
-                <br>
+            <div id="password-form">
+                <label for="password">Password</label><br>
+                <input type="password" name="password" placeholder="********" id="password"/>
             </div>
         </section>
-    
-    </div>
-    <section id="partie3">
-        <div class="text">
-            <h2>Centrage</h2>
-            <p>Les longues lignes de texte peuvent être difficiles à analyser, et donc difficiles à lire . La définition d'une limite de caractères par ligne améliore considérablement la lisibilité et l'attrait d'un mur de texte.</p>
-        </div>
-    </section>
-    <section class="section-textual-content">
-        
-    </section>
+
+        <section id="button-login">
+            <input type="reset" value="Forgot your password" id="forgotyourpassword"/>
+            <input type="submit" value="Login" id="login"/>
+        </section>
+    </form>
+
 </body>
 </html>
