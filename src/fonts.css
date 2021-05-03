@@ -1,0 +1,112 @@
+
+@font-face {
+    font-family: "Gotham";
+    font-weight: 800;
+    font-style: normal;
+    src: url("./fonts/gotham/Gotham-Black.woff2") format(woff2);
+}
+
+@font-face {
+    font-family: "Gotham";
+    font-weight: 800;
+    font-style: italic;
+    src: url("./fonts/gotham/Gotham-BlackItalic.woff2") format(woff2);
+}
+
+@font-face {
+    font-family: "Gotham";
+    font-weight: 600;
+    font-style: normal;
+    src: url("./fonts/gotham/Gotham-Bold.woff2") format(woff2);
+}
+
+@font-face {
+    font-family: "Gotham";
+    font-weight: 600;
+    font-style: italic;
+    src: url("./fonts/gotham/Gotham-BoldItalic.woff2") format(woff2);
+}
+
+@font-face {
+    font-family: "Gotham";
+    font-weight: 350;
+    font-style: normal;
+    src: url("./fonts/gotham/Gotham-Book.woff2") format(woff2);
+}
+
+@font-face {
+    font-family: "Gotham";
+    font-weight: 350;
+    font-style: italic;
+    src: url("./fonts/gotham/Gotham-BookItalic.woff2") format(woff2);
+}
+
+@font-face {
+    font-family: "Gotham";
+    font-weight: 250;
+    font-style: normal;
+    src: url("./fonts/gotham/Gotham-ExtraLight.woff2") format(woff2);
+}
+
+@font-face {
+    font-family: "Gotham";
+    font-weight: 250;
+    font-style: italic;
+    src: url("./fonts/gotham/Gotham-ExtraLightItalic.woff2") format(woff2);
+}
+
+@font-face {
+    font-family: "Gotham";
+    font-weight: 300;
+    font-style: normal;
+    src: url("./fonts/gotham/Gotham-Light.woff2") format(woff2);
+}
+
+@font-face {
+    font-family: "Gotham";
+    font-weight: 300;
+    font-style: italic;
+    src: url("./fonts/gotham/Gotham-LightItalic.woff2") format(woff2);
+}
+
+@font-face {
+    font-family: "Gotham";
+    font-weight: 400;
+    font-style: normal;
+    src: url("./fonts/gotham/Gotham-Medium.woff2") format(woff2);
+}
+
+@font-face {
+    font-family: "Gotham";
+    font-weight: 400;
+    font-style: italic;
+    src: url("./fonts/gotham/Gotham-MediumItalic.woff2") format(woff2);
+}
+
+@font-face {
+    font-family: "Gotham";
+    font-weight: 200;
+    font-style: normal;
+    src: url("./fonts/gotham/Gotham-Thin.woff2") format(woff2);
+}
+
+@font-face {
+    font-family: "Gotham";
+    font-weight: 200;
+    font-style: italic;
+    src: url("./fonts/gotham/Gotham-ThinItalic.woff2") format(woff2);
+}
+
+@font-face {
+    font-family: "Gotham";
+    font-weight: 400;
+    font-style: normal;
+    src: url("./fonts/gotham/Gotham-Ultra.woff2") format(woff2);
+}
+
+@font-face {
+    font-family: "Gotham";
+    font-weight: 400;
+    font-style: italic;
+    src: url("./fonts/gotham/Gotham-UltraItalic.woff2") format(woff2);
+}
