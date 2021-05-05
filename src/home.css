@@ -1,7 +1,3 @@
-@font-face {
-    font-family: "Gotham";
-    src: url("../../../../lauriebodot/Library/Fonts/GothamRounded-Medium.otf") format("woff2");
-}
 * {
     box-sizing: border-box;
     padding: 0;
