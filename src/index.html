@@ -1,52 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercice 1</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <title>Connexion</title>
 </head>
 <body>
-    <section id="header">
-        <div id="titre">
-            <h1>Conception Web en 4 minutes</h1>
-            <div class="text">
-                <p>
-                    <a href="https://github.com/LaurieBdt">par Laurie Bodot</a>
-                </p>
-            </div>
-        </div>
-    </section>
+    <div class="card">
+        <div class="card-header">
+            <h1 class="card-title">Connexion</h1>
+        </div>    
+    <div class="card-body">
+        <form class="form">
 
-    <section id="partie1">
-            <div class="text">
-                <p>Disons que vous avez un produit, un portefeuille ou simplement une   idée que vous souhaitez partager avec tout le monde sur votre propre site Web.Avant de le publier sur Internet, vous voulez le rendre attrayant,professionnel ou au moins décent à regarder.</p>
-                <br>
-                <p>Quelle est la <a href="#partie2">première chose sur laquelle</a> vous devez travailler?</p>
+            <div id="connexion">
+                <div class="form-input">
+                    <label for="email">Adresse e-mail</label><br>
+                    <input type="email" name="email" placeholder="Adresse e-mail"/>
+                </div>
+                <div class="form-input">
+                    <label for="password">Mot de passe</label><br>
+                    <input type="password" name="password" placeholder="•••••••••"/>
+                </div>
             </div>
-    </section>
-    <section id="partie2">
-            <div id="text">
-                <h2>Contenu</h2>
-                <p >Le but de la <strong>conception</strong> est d'améliorer la présentation du contenu auquel il est appliqué. Cela peut sembler évident, mais le contenu étant l' élément <strong>principal</strong> d'un site Web, il ne doit pas être établi après coup.</p>
-                <br>
-                <p>Le contenu écrit, comme le paragraphe que vous lisez actuellement, représente plus de 90% du Web. Le style de ce contenu textuel ira un long chemin.</p>
-                <br>
-                <p>Supposons que vous ayez déjà finalisé le contenu que vous souhaitez publier et que vous venez de créer un style.cssfichier vide , quelle est <a href="#partie2" >la première règle que </a> vous pouvez écrire?</p>
-                <br>
+
+            <div class="form-buttons">
+                <p><a href="" >Mot de passe oublié ?</a></p>
+                <p id="login"><a href="./home.html">Connexion</a></p>
             </div>
-        </section>
-    
+
+        </form>
     </div>
-    <section id="partie3">
-        <div class="text">
-            <h2>Centrage</h2>
-            <p>Les longues lignes de texte peuvent être difficiles à analyser, et donc difficiles à lire . La définition d'une limite de caractères par ligne améliore considérablement la lisibilité et l'attrait d'un mur de texte.</p>
-        </div>
-    </section>
-    <section class="section-textual-content">
-        
-    </section>
+    </div>
+    
+    <footer>
+            <p id="version-text">SmartHealing V1.0.1</p>
+    </footer>
+
 </body>
 </html>
