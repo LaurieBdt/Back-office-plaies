@@ -12,7 +12,11 @@ echo '# Titre' >> README.md
 git add .
 git commit -m "Premier commit"
 ```
+pour mettre les mise a jour de github sur git:
+git switch main
+git pull = tirer
 
+Et ensuite tu pourras créer une nouvelle branche
 ## Je développe une nouvelle fonctionnalité
 A Fabernovel, on développe toujours une nouvelle fonctionnalité dans une branche à part, pour ne pas risquer de casser ce qu'on a déjà fait. Pour créer une branche :
 ```
