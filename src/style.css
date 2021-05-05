@@ -12,7 +12,7 @@
 
 body{
     background-color: var(--main-bg-color);
-    font-family: "Gotham";
+    font-family: "Gotham", "Arial", sans-serif;
     
     width: 100%;
     min-height: 100vh;
@@ -23,18 +23,17 @@ body{
     flex-direction: column;
 }
 
-.home{
+.card{
     width: 470px;
 
     padding: 24px;
+
+    font-family: "Gotham", "Arial", sans-serif;
 
     background-color: white;
 
     border-radius: 8px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 
@@ -48,13 +47,14 @@ body{
 .card-title {
     width: 100%;
 
-    font-size: 16px;
-
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.card-header h1{
+    font-size: 16px;
+}
 
 #connexion {
     font-size: 14px;
@@ -62,7 +62,7 @@ body{
 }
 
 .form-input input{
-    width: 422px;
+    width: 100%;
     
     background-color: var(--main-bg-color);
     
@@ -88,35 +88,33 @@ input:hover {
     justify-content: flex-end;
 
     
-    margin-bottom: 25px;
-}
-
-#forgotyourpassword a{
-    padding: 12px 8px;
     margin-bottom: 24px;
-
-    font-size: 14px;
-
-    color: var(--main-bg-color2);
-
-    border: none;
-    text-decoration: none;
 }
 
-#login a{
+.form-buttons p {
+    padding: 12px 8px;
+}
+#forgotyourpassword {
+    border: none;
+}
+
+#login{
     padding: 12px 24px;
-    
-    font-size: 14px;
-
-    text-decoration: none;
-
+  
     background-color: var(--main-bg-color2);
     opacity: 0.3;
-
-    color: white;
-
     border: var(--main-bg-color2);
     border-radius: 40px;
+}
+#login a{
+    color: white;
+}
+
+a{
+    font-size: 14px;
+    color: var(--main-bg-color2);
+    
+    text-decoration: none;
 }
 
 footer {
