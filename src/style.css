@@ -8,6 +8,7 @@
 :root {
     --main-bg-color: #E6EBEF;
     --main-bg-color2: #00A6C8;
+    --main-bg-color3: #B3C1CD;
 }
 
 body{
@@ -55,8 +56,10 @@ body{
     justify-content: center;
 }
 
+
 #connexion {
     font-size: 14px;
+    margin-bottom: 34px;
 }
 
 .form-input input{
@@ -64,7 +67,7 @@ body{
     
     background-color: var(--main-bg-color);
     
-    color:#B3C1CD;
+    color:var(--main-bg-color3);
 
     padding: 12px;
     margin-top: 8px;
@@ -75,7 +78,7 @@ body{
 }
 
 input:hover {
-    border: 1px solid #00A6C8;
+    border: 1px solid var(--main-bg-color2);
 }
 
 .form-buttons{
@@ -85,7 +88,7 @@ input:hover {
     align-items: center;
     justify-content: flex-end;
 
-    margin-top: 34px;
+    
     margin-bottom: 25px;
 }
 
@@ -95,7 +98,7 @@ input:hover {
 
     font-size: 14px;
 
-    color: #00A6C8;
+    color: var(--main-bg-color2);
 
     border: none;
     text-decoration: none;
@@ -109,9 +112,11 @@ input:hover {
     text-decoration: none;
 
     background-color: var(--main-bg-color2);
+    opacity: 0.3;
+    
     color: white;
 
-    border: #00A6C8;
+    border: var(--main-bg-color2);
     border-radius: 40px;
 }
 
@@ -122,8 +127,10 @@ footer {
     display: flex;
     justify-content: flex-end;
 
-    color: #B3C1CD;
+    color: var(--main-bg-color3);
     font-size: 10px;
+
+    
 }
 
 .version-text{
