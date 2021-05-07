@@ -47,6 +47,8 @@ body {
 }
 
 .container {
+    width: 53%;
+
     padding: 72px;
 }
 
@@ -79,6 +81,8 @@ body {
 }
 
 .cards-container {
+    width: 100%;
+
     background-color: #f0f0ee;
 
     display: flex;
@@ -91,6 +95,8 @@ body {
     padding: 24px;
     background-color: white;
     display: flex;
+
+    border-radius: 8px;
 }
 
 .button-information {
