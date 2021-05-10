@@ -8,6 +8,10 @@
     --main-bg-color: #E6EBEF;
     --main-bg-color2: #00A6C8;
     --main-bg-color3: #B3C1CD;
+    --main-bg-color4: #335978;
+    --main-bg-color5: #E30F3D;
+    --main-bg-color6: #FF9D43;
+    --main-bg-color7: #252828;
 }
 
 body {
@@ -16,7 +20,7 @@ body {
     width: 100vw;
     height: 100vh;
 
-    font-family: "Gotham", "Arial", sans-serif;
+    color: var(--main-bg-color7);
 
     display: flex;
 }
@@ -24,14 +28,14 @@ body {
 .menu {
     width: 64px;
     height: 100%;
-    background-color: black;
+    background-color: var(--main-bg-color7);
 }
 
 .content{
     width: 100%;
     height: 100%;
     background-color: #EDEDED;
-    flex-direction: column;
+    
 }
 
 .navbar-top {
@@ -41,13 +45,13 @@ body {
 }
 
 .main{
-    width: 100%;
+    width:calc(100% - 60px);
     height: 100%;
     overflow: auto;
 }
 
 .container {
-    width: 53%;
+    width: 79%;
 
     padding: 72px;
 }
@@ -71,9 +75,15 @@ body {
     border-radius: 5px;
     padding: 14px;
 
+    color: var(--main-bg-color7);
+
     font-family: "Gotham", "Arial", sans-serif;
     font-weight: 800;
     font-style: normal;
+}
+
+.button-general:hover{
+    border: 1px solid var(--main-bg-color7);
 }
 
 .button-general span {
@@ -81,7 +91,7 @@ body {
 }
 
 .cards-container {
-    width: 100%;
+    width: 600px;
 
     background-color: #f0f0ee;
 
@@ -90,20 +100,20 @@ body {
 }
 
 .card {
-    width: 100%;
-    height: 282px;
     padding: 24px;
     background-color: white;
     display: flex;
 
     border-radius: 8px;
 }
-
+.card-header {
+    display: flex;
+}
 .button-information {
     width: 32px;
     height: 32px;
 
-    background-color: #FF9D43;
+    background-color: var(--main-bg-color6);
 
     border-radius: 40px;
 
@@ -112,6 +122,8 @@ body {
     justify-content: center;
 
     margin-right: 16px;
+
+    flex-shrink: 0;
 }
 
 .rond {
@@ -124,10 +136,11 @@ body {
 
 .text-container {
     flex-direction: column;
-    width: 90%;
+    
 }
 
-.card h1 {
+.type1-text{
+    color: var(--main-bg-color4);
     font-family: "Gotham", "Arial", sans-serif;
     font-weight: 800;
     font-style: normal;
@@ -136,7 +149,7 @@ body {
     margin-bottom: 8px;
 }
 
-.card p {
+.type2-text{
     font-family: "Gotham", "Arial", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -145,8 +158,8 @@ body {
     margin-bottom: 16px;
 }
 
-.avertissement-langue {
-    color: #E30F3D;
+.type3-text{
+    color: var(--main-bg-color5);
     font-family: "Gotham", "Arial", sans-serif;
     font-weight: 800;
     font-style: normal;
@@ -154,5 +167,7 @@ body {
 }
 
 .fleche-information-suplementaire {
+    width:6px;
     margin-top: 13px;
+    margin: 17px;
 }

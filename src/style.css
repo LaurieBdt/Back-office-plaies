@@ -8,6 +8,7 @@
     --main-bg-color: #E6EBEF;
     --main-bg-color2: #00A6C8;
     --main-bg-color3: #B3C1CD;
+    --main-bg-color4: #252828;
 }
 
 body{
@@ -21,6 +22,8 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    color: var(--main-bg-color4);
 }
 
 .card{
@@ -29,6 +32,8 @@ body{
     padding: 24px;
 
     font-family: "Gotham", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
 
     background-color: white;
 
@@ -60,6 +65,22 @@ body{
     font-size: 14px;
     margin-bottom: 34px;
 }
+.form-input{
+    font-family: "Gotham", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: var(--main-bg-color3);
+}
+
+.email::placeholder{
+    color: var(--main-bg-color3);
+    
+}
+
+.password::placeholder{
+    color: var(--main-bg-color3);
+    
+}
 
 .form-input input{
     width: 100%;
@@ -86,13 +107,13 @@ input:hover {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
-    
-    margin-bottom: 24px;
 }
 
 .form-buttons p {
     padding: 12px 8px;
+    font-family: "Gotham", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
 }
 p{
     border: none;
