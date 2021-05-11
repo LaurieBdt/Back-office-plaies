@@ -6,12 +6,12 @@
 
 :root {
     --main-bg-color: #E6EBEF;
-    --main-bg-color2: #00A6C8;
-    --main-bg-color3: #B3C1CD;
-    --main-bg-color4: #335978;
-    --main-bg-color5: #E30F3D;
-    --main-bg-color6: #FF9D43;
-    --main-bg-color7: #252828;
+    --primary-color: #00A6C8;
+    --grey-lighter: #B3C1CD;
+    --grey-blue: #335978;
+    --red: #E30F3D;
+    --orange: #FF9D43;
+    --grey-darker: #252828;
 }
 
 body {
@@ -20,7 +20,9 @@ body {
     width: 100vw;
     height: 100vh;
 
-    color: var(--main-bg-color7);
+    color: var(--grey-darker);
+
+    font-family: "Gotham", "Arial", sans-serif;
 
     display: flex;
 }
@@ -28,7 +30,7 @@ body {
 .menu {
     width: 64px;
     height: 100%;
-    background-color: var(--main-bg-color7);
+    background-color: var(--grey-darker);
 }
 
 .content{
@@ -51,7 +53,7 @@ body {
 }
 
 .container {
-    width: 79%;
+    width: 85%;
 
     padding: 72px;
 }
@@ -75,7 +77,7 @@ body {
     border-radius: 5px;
     padding: 14px;
 
-    color: var(--main-bg-color7);
+    color: var(--grey-darker);
 
     font-family: "Gotham", "Arial", sans-serif;
     font-weight: 800;
@@ -83,7 +85,7 @@ body {
 }
 
 .button-general:hover{
-    border: 1px solid var(--main-bg-color7);
+    box-shadow: 0px 4px 16px rgb(0 48 86 / 60%);
 }
 
 .button-general span {
@@ -105,7 +107,10 @@ body {
     display: flex;
 
     border-radius: 8px;
+    box-shadow: rgb(0 48 86 / 10%) 0px 4px 8px;
 }
+    
+
 .card-header {
     display: flex;
 }
@@ -113,7 +118,7 @@ body {
     width: 32px;
     height: 32px;
 
-    background-color: var(--main-bg-color6);
+    background-color: var(--orange);
 
     border-radius: 40px;
 
@@ -135,13 +140,12 @@ body {
 }
 
 .text-container {
-    flex-direction: column;
+    width: 100%;
     
 }
 
-.type1-text{
-    color: var(--main-bg-color4);
-    font-family: "Gotham", "Arial", sans-serif;
+.category-card-title{
+    color: var(--grey-blue);
     font-weight: 800;
     font-style: normal;
     font-size: 10px;
@@ -149,8 +153,8 @@ body {
     margin-bottom: 8px;
 }
 
-.type2-text{
-    font-family: "Gotham", "Arial", sans-serif;
+.category-card-translation{
+    
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
@@ -158,16 +162,14 @@ body {
     margin-bottom: 16px;
 }
 
-.type3-text{
-    color: var(--main-bg-color5);
-    font-family: "Gotham", "Arial", sans-serif;
+.text-danger{
+    color: var(--red);
     font-weight: 800;
     font-style: normal;
     font-size: 14px;
 }
 
 .fleche-information-suplementaire {
-    width:6px;
     margin-top: 13px;
     margin: 17px;
 }
