@@ -11,100 +11,128 @@
     --grey-blue: #335978;
     --red: #E30F3D;
     --orange: #FF9D43;
+    --green: #7DB13A;
     --grey-darker: #252828;
+    --grey-white: #EDEDED;
+    --white: #FFFFFF;
+    --grey:#868686;
 }
 
 body {
     background-color: var(--main-bg-color);
 
     width: 100vw;
-    height: 100vh;
-
-    color: var(--grey-darker);
-
-    font-family: "Gotham", "Arial", sans-serif;
-
-    display: flex;
-}
-
-.menu {
-    width: 64px;
-    height: 100%;
-    background-color: var(--grey-darker);
-}
-
-.content{
-    width: 100%;
-    height: 100%;
-    background-color: #EDEDED;
-    
-}
-
-.navbar-top {
-    width: 100%;
-    height: 60px;
-    background-color: #ffffff;
-}
-
-.main{
-    width:calc(100% - 60px);
-    height: 100%;
-    overflow: auto;
-}
-
-.container {
-    width: 85%;
-
-    padding: 72px;
-}
-
-.buttons-container {
-    width: 100%;
-    
-    
-    margin-bottom: 32px;
-    
-}
-
-.button-general {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    
-    background-color: #FFFFFF;
-    border: white;
-    box-shadow: 0px 4px 8px rgba(0, 48, 86, 0.3);
-    border-radius: 5px;
-    padding: 14px;
 
     color: var(--grey-darker);
 
     font-family: "Gotham", "Arial", sans-serif;
     font-weight: 800;
     font-style: normal;
+
+    display: flex;
 }
 
-.button-general:hover{
+.menu {
+    width: 64px;
+
+    background-color: var(--grey-darker);
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--grey-white);
+}
+
+.navbar-top {
+    width: 100%;
+    height: 60px;
+
+    background-color: var(--white);
+}
+
+.navbar-container {
+    width: 100%;
+    display: flex;
+    /* align-items: center; ceci ne marche pas du coup j'ai mit un padding */
+    padding-top: 23px;
+    justify-content: center;
+
+    font-style: normal;
+    font-weight: 400;
+
+    color:var(--grey);
+}
+
+.navbar-container p{
+    padding-right: 32px;
+}
+.text-style {
+    font-weight: 500;
+    font-style: normal;
+    
+    color :var(--grey-darker); 
+}
+
+.main {
+    width:calc(100% - 60px);
+    height: 100%;
+
+    overflow: auto;
+}
+
+.container {
+    width: 100%;
+
+    padding: 72px;
+}
+
+.buttons-container {
+    width: 100%;
+
+    margin-bottom: 32px;
+}
+
+.button-left-icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    background-color: var(--white);
+    border: var(--white);
+    box-shadow: 0px 4px 8px rgba(0, 48, 86, 0.3);
+    border-radius: 5px;
+    padding: 14px;
+
+    color: var(--grey-darker);
+
+    
+    font-weight: 800;
+    font-style: normal;
+}
+
+.button-left-icon:hover{
     box-shadow: 0px 4px 16px rgb(0 48 86 / 60%);
 }
 
-.button-general span {
+.button-left-icon span {
     padding-right: 10px;
 }
 
 .cards-container {
     width: 600px;
 
-    background-color: #f0f0ee;
+    background-color: var(--grey-white);
 
     display: flex;
     flex-direction: column;
 }
 
 .card {
+    margin-bottom: 24px;
     padding: 24px;
-    background-color: white;
-    display: flex;
+    background-color: var(--white);
 
     border-radius: 8px;
     box-shadow: rgb(0 48 86 / 10%) 0px 4px 8px;
@@ -114,7 +142,8 @@ body {
 .card-header {
     display: flex;
 }
-.button-information {
+
+.icon-en-traitement {
     width: 32px;
     height: 32px;
 
@@ -128,27 +157,53 @@ body {
 
     margin-right: 16px;
 
-    flex-shrink: 0;
+    padding: 8px;
 }
 
-.rond {
+.icon-check {
+    width: 32px;
+    height: 32px;
+
+    background-color: var(--green);
+
+    border-radius: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 16px;
+
+    padding: 8px;
+}
+
+.circle {
     width: 3px;
     height: 3px;
-    background-color: white;
+    background-color: var(--white);
     border-radius: 40px;
     margin: 1px;
 }
 
 .text-container {
     width: 100%;
-    
 }
 
 .category-card-title{
     color: var(--grey-blue);
+
     font-weight: 800;
     font-style: normal;
     font-size: 10px;
+
+    margin-bottom: 8px;
+}
+.category-card-title-langue{
+    color: var(--grey);
+
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
 
     margin-bottom: 8px;
 }
@@ -164,12 +219,28 @@ body {
 
 .text-danger{
     color: var(--red);
+
     font-weight: 800;
     font-style: normal;
     font-size: 14px;
 }
 
-.fleche-information-suplementaire {
+/*.fleche-information-suplementaire {
     margin-top: 13px;
     margin: 17px;
+}*/
+
+.card-content {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.barre-de-separation{
+    width: 464px;
+
+    border: 1px solid var(--main-bg-color);
+
+    margin: 24px;
 }
