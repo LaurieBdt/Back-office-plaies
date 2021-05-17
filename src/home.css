@@ -71,7 +71,7 @@ body {
 .text-style {
     font-weight: 500;
     font-style: normal;
-    
+
     color :var(--grey-darker); 
 }
 
@@ -243,4 +243,14 @@ body {
     border: 1px solid var(--main-bg-color);
 
     margin: 24px;
+}
+
+.fleche-information-suplementaire-1 img{
+    margin-left: -18px;
+    margin-top: 15px;
+}
+
+.fleche-information-suplementaire-2 img{
+    margin-left: -24px;
+    margin-top: 5px;
 }
