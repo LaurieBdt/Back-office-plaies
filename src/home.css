@@ -13,7 +13,7 @@
     --orange: #FF9D43;
     --green: #7DB13A;
     --grey-darker: #252828;
-    --grey-white: #EDEDED;
+    --white-grey: #EDEDED;
     --white: #FFFFFF;
     --grey:#868686;
 }
@@ -26,8 +26,6 @@ body {
     color: var(--grey-darker);
 
     font-family: "Gotham", "Arial", sans-serif;
-    font-weight: 800;
-    font-style: normal;
 
     display: flex;
 }
@@ -62,21 +60,27 @@ body {
     font-style: normal;
     font-weight: 400;
 
-    color:var(--grey);
+    color: var(--grey);
 }
 
 .navbar-container p{
     padding-right: 32px;
+    /* j'ai mit un p c'etait pour faire l'espace
+    entre les mots de la navbar,
+    parce que avec justify-content il prend des mesures 
+    par défaut et du coup sa ne donne pas le rendu*/
 }
+
 .text-style {
     font-weight: 500;
     font-style: normal;
 
-    color :var(--grey-darker); 
+    color: var(--grey-darker); 
+    
 }
 
 .main {
-    width:calc(100% - 60px);
+    width: calc(100% - 60px);
     height: 100%;
 
     overflow: auto;
@@ -100,16 +104,15 @@ body {
     justify-content: space-evenly;
     
     background-color: var(--white);
-    border: var(--white);
+    border: none;
+
     box-shadow: 0px 4px 8px rgba(0, 48, 86, 0.3);
     border-radius: 5px;
     padding: 14px;
 
     color: var(--grey-darker);
-
     
     font-weight: 800;
-    font-style: normal;
 }
 
 .button-left-icon:hover{
@@ -137,17 +140,16 @@ body {
     border-radius: 8px;
     box-shadow: rgb(0 48 86 / 10%) 0px 4px 8px;
 }
-    
 
 .card-header {
-    display: flex;
+    display: flex; /* ceci n'est pas inutile, je pense plus tot que le probleme vers d'autre part, peut-etre une div parent*/
 }
 
-.icon-en-traitement {
+.icon-medium {
     width: 32px;
     height: 32px;
 
-    background-color: var(--orange);
+    background-color: black;
 
     border-radius: 40px;
 
@@ -157,25 +159,21 @@ body {
 
     margin-right: 16px;
 
-    padding: 8px;
+    flex-shrink: 0;
 }
 
-.icon-check {
-    width: 32px;
-    height: 32px;
-
-    background-color: var(--green);
-
-    border-radius: 40px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin-right: 16px;
-
-    padding: 8px;
+.bg-orange {
+    background-color: var(--orange) !important;
 }
+
+.bg-green {
+    background-color: var(--green) !important;
+}
+
+.remove-margin-bottom {
+    margin-bottom: 0 !important;
+}
+
 
 .circle {
     width: 3px;
@@ -193,16 +191,14 @@ body {
     color: var(--grey-blue);
 
     font-weight: 800;
-    font-style: normal;
     font-size: 10px;
 
     margin-bottom: 8px;
 }
-.category-card-title-langue{
+.category-card-language{
     color: var(--grey);
 
     font-weight: 400;
-    font-style: normal;
     font-size: 14px;
 
     margin-bottom: 8px;
@@ -211,7 +207,6 @@ body {
 .category-card-translation{
     
     font-weight: 400;
-    font-style: normal;
     font-size: 14px;
 
     margin-bottom: 16px;
@@ -221,36 +216,27 @@ body {
     color: var(--red);
 
     font-weight: 800;
-    font-style: normal;
     font-size: 14px;
 }
 
-/*.fleche-information-suplementaire {
-    margin-top: 13px;
-    margin: 17px;
-}*/
-
 .card-content {
     width: 100%;
-
-    display: flex;
-    justify-content: center;
+    padding-left: 48px;
+    padding-right: 32px;
 }
 
 .barre-de-separation{
-    width: 464px;
+    width: 100%;
 
     border: 1px solid var(--main-bg-color);
 
-    margin: 24px;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
-.fleche-information-suplementaire-1 img{
-    margin-left: -18px;
+.fleche-information-suplementaire {
+    margin-left: 24px;
     margin-top: 15px;
 }
 
-.fleche-information-suplementaire-2 img{
-    margin-left: -24px;
-    margin-top: 5px;
-}
+
