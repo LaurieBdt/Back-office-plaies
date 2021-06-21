@@ -6,14 +6,19 @@
 
 :root {
     --main-bg-color: #E6EBEF;
-    --main-bg-color2: #00A6C8;
-    --main-bg-color3: #B3C1CD;
+    --primary-color: #00A6C8;
+    --grey-lighter: #B3C1CD;
+    --color-text-black: #252828;
+    --white: #FFFFFF;
 }
 
 body{
     background-color: var(--main-bg-color);
-    font-family: "Gotham", "Arial", sans-serif;
     
+    font-family: "Gotham", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+
     width: 100%;
     min-height: 100vh;
 
@@ -21,6 +26,8 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    color: var(--color-text-black);
 }
 
 .card{
@@ -28,9 +35,7 @@ body{
 
     padding: 24px;
 
-    font-family: "Gotham", "Arial", sans-serif;
-
-    background-color: white;
+    background-color: var(--white);
 
     border-radius: 8px;
 
@@ -60,13 +65,28 @@ body{
     font-size: 14px;
     margin-bottom: 34px;
 }
+.form-input{
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: var(--grey-lighter);
+}
+
+.email::placeholder{
+    color: var(--grey-lighter);
+    
+}
+
+.password::placeholder{
+    color: var(--grey-lighter);
+    
+}
 
 .form-input input{
     width: 100%;
     
     background-color: var(--main-bg-color);
     
-    color:var(--main-bg-color3);
+    color:var(--grey-lighter);
 
     padding: 12px;
     margin-top: 8px;
@@ -77,7 +97,7 @@ body{
 }
 
 input:hover {
-    border: 1px solid var(--main-bg-color2);
+    border: 1px solid var(--primary-color);
 }
 
 .form-buttons{
@@ -86,14 +106,15 @@ input:hover {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
-    
-    margin-bottom: 24px;
 }
 
 .form-buttons p {
     padding: 12px 8px;
+
+    font-style: normal;
+    font-weight: 500;
 }
+
 p{
     border: none;
 }
@@ -101,18 +122,19 @@ p{
 #login{
     padding: 12px 24px;
   
-    background-color: var(--main-bg-color2);
+    background-color: var(--primary-color);
     opacity: 0.3;
-    border: var(--main-bg-color2);
+    border: var(--primary-color);
     border-radius: 40px;
 }
+
 #login a{
-    color: white;
+    color: var(--white);
 }
 
 a{
     font-size: 14px;
-    color: var(--main-bg-color2);
+    color: var(--primary-color);
     
     text-decoration: none;
 }
@@ -123,7 +145,7 @@ footer {
     display: flex;
     justify-content: flex-end;
 
-    color: var(--main-bg-color3);
+    color: var(--grey-lighter);
     font-size: 10px;
 
     position: absolute;
