@@ -1,12 +1,17 @@
 # Mémo git
+
 ## Je démarre un nouveau projet
+
 Après avoir créé un nouveau dossier pour ce projet, dans le terminal, il faut se placer dans le dossier du projet, en naviguant en utilisant la commande `cd` (voir exemple dans le chapitre "Se déplacer dans les dossiers avec le terminal" ci-dessous).
 
-Une fois dans le dossier du projet, faire : 
+Une fois dans le dossier du projet, faire :
+
 ```
 git init
 ```
-Il faut faire un premier commit. Pour cela, copier/coller : 
+
+Il faut faire un premier commit. Pour cela, copier/coller :
+
 ```
 echo '# Titre' >> README.md
 git add .
@@ -14,15 +19,20 @@ git commit -m "Premier commit"
 ```
 
 ## Je développe une nouvelle fonctionnalité
+
 A Fabernovel, on développe toujours une nouvelle fonctionnalité dans une branche à part, pour ne pas risquer de casser ce qu'on a déjà fait. Pour créer une branche :
+
 ```
 git switch -c le-nom-de-ma-branche
 ```
+
 Ensuite, quand on travaille, on pourra sauvegarder son travail en suivant la section "Je veux sauvegarder mon travail".
 Une fois fini, sur GitHub on créé une pull-request. Lorsqu'elle sera mergée, il faudra retourner sur la branche nommée `main`. Pour cela on fait `git switch main`.
 
 ## Je veux sauvegarder mon travail (à faire au moins 4 fois par jour)
+
 **ATTENTION** : avant de commencer à travailler sur une nouvelle fonctionnalité, il faut avoir créé une branche
+
 ```
 # Commence par regarder quels fichiers ont été modifiés
 git status
